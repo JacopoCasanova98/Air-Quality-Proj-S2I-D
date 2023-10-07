@@ -4,7 +4,7 @@ const authController = require('../controllers/airqualityController');
 const favoriteController = require('../controllers/favoriteController');
 
 
-router.get('https://aq-server.onrender.com', (req, res) => {
+router.get('https://aq-server-projj.onrender.com', (req, res) => {
    res.send('Benvenuti nella mia applicazione!');
    console.log('Get req OK');
 });
