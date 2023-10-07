@@ -8,14 +8,9 @@ dotenv.config();
 const app = express();
 
 // Configurazione CORS
-app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', 'https://cute-puppy-86d72c.netlify.app');
-  // Specifica i metodi consentiti, le intestazioni personalizzate e altre configurazioni CORS se necessario.
-  // Esempio:
-  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
-  next();
-});
+app.use(cors({
+  origin: 'https://cute-puppy-86d72c.netlify.app',
+}));
 
 // Middlewares
 app.use(express.json());
