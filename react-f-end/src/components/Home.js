@@ -37,7 +37,7 @@ function Home() {
   try {
     const token = localStorage.getItem('token');
 
-    const response = await fetch('https://aq-server.onrender.com/auth/add-favorite', {
+    const response = await fetch('https://aq-server-projj.onrender.com/auth/add-favorite', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -70,7 +70,7 @@ const removeFavoriteCity = async (city_name) => {
   try {
     const token = localStorage.getItem('token');
 
-    const response = await fetch('https://aq-server.onrender.com/auth/remove-favorite', {
+    const response = await fetch('https://aq-server-projj.onrender.com/auth/remove-favorite', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -105,7 +105,7 @@ const removeFavoriteCity = async (city_name) => {
     try {
       const token = localStorage.getItem('token');
 
-      const response = await fetch('https://aq-server.onrender.com/auth/favorite-cities', {
+      const response = await fetch('https://aq-server-projj.onrender.com/auth/favorite-cities', {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${token}`,
