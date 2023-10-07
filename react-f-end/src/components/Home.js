@@ -24,6 +24,7 @@ function Home() {
       } else {
         setError("Sorry, we couldn't find the city you were looking for. Try another location nearby or ensure your spelling is correct.")
         setAirQualityData(null)
+        console.log('Errore GetAirQ: ', error)
       }
     } catch (error) {
       console.error("network error:", error)
@@ -54,6 +55,11 @@ function Home() {
     } else if (response.status === 400) {
       const data = await response.json();
       setErrorMessage(data.message); // Imposta il messaggio di errore dal server
+
+
+      console.log('Errore AddCity: ', error)
+
+
     } else {
       console.log('Errore, Città non Aggiunta');
       console.log(city_name);
@@ -92,6 +98,8 @@ const removeFavoriteCity = async (city_name) => {
     } else {
       console.log('Errore, Città non Rimossa');
       console.log(city_name);
+
+      console.log('Errore RemoveCity: ', error)
     }
   } catch (error) {
     console.error('Si è verificato un errore durante la rimozione della città preferita:', error);
@@ -117,6 +125,7 @@ const removeFavoriteCity = async (city_name) => {
         setFavoriteCities(data.favoriteCities);
       } else {
         console.error('Errore nel recupero delle città preferite');
+        console.error('Errore GET');
       }
     } catch (error) {
       console.error('Si è verificato un errore durante il recupero delle città preferite:', error);
