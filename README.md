@@ -3,7 +3,7 @@
 <br>
 
 ### 🌐 Try it on Netlify
-### [🌍 https://650c6cf58066d80c0d91d3ad--keen-duckanoo-44bfcc.netlify.app/](https://exquisite-figolla-1a98c7.netlify.app)
+### [🌍 https://650c6cf58066d80c0d91d3ad--keen-duckanoo-44bfcc.netlify.app/]([https://exquisite-figolla-1a98c7.netlify.app](https://glittering-lamington-b192da.netlify.app))
 
 <br>
 
