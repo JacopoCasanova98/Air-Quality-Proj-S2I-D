@@ -4,11 +4,10 @@ const authController = require('../controllers/airqualityController');
 const favoriteController = require('../controllers/favoriteController');
 
 
-router.get('https://air-quality-ssit.onrender.com', (req, res) => {
-   
+router.get('/', (req, res) => {
+   res.send('Benvenuti nella mia applicazione!');
    console.log('Get req OK');
 });
-
 
 
 
