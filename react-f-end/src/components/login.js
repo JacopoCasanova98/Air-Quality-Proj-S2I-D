@@ -20,7 +20,7 @@ const Login = () => {
         setIsLoading(true);
         
         try {
-            const response = await fetch('https://aq-server.onrender.com/auth/login', {
+            const response = await fetch('https://aq-server-projj.onrender.com/auth/login', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
