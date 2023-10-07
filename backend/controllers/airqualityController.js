@@ -43,6 +43,8 @@ exports.login = async (req, res) => {
       return res.status(401).json({ message: 'Email non valida' });
     }
 
+    console.log('OK');
+
     // Verifica della password
     const passwordMatch = await bcrypt.compare(password, user.password);
     if (!passwordMatch) {
