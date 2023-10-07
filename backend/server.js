@@ -9,7 +9,7 @@ const app = express();
 
 // Configurazione CORS
 app.use(cors({
-  origin: 'https://cute-puppy-86d72c.netlify.app',
+  origin: 'http://localhost:3000/',
 }));
 
 // Middlewares
