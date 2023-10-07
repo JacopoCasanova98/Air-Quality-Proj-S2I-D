@@ -45,7 +45,7 @@ const Login = () => {
                 }, 1100);
             } else {
               console.log('Login failed');
-              setLoginFailed(true);
+              setLoginFailed(true)
             }
           } catch (error) {
             console.error('Errore durante il login', error);
