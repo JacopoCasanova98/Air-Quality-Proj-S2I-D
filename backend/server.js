@@ -8,9 +8,9 @@ dotenv.config();
 const app = express();
 
 // Configurazione CORS
-app.use(cors({
-  origin: 'https://cute-puppy-86d72c.netlify.app/',
-}));
+app.get('/', (req, res) => {
+  res.send('Benvenuti nella mia applicazione!');
+});
 
 // Middlewares
 app.use(express.json());
