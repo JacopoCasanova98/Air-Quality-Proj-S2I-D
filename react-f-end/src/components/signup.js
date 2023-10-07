@@ -14,7 +14,7 @@ const Signup = () => {
         setIsLoading(true); // Mostra l'indicatore di caricamento
 
         try {
-            const response = await fetch('https://aq-server.onrender.com/auth/signup', {
+            const response = await fetch('https://aq-server-projj.onrender.com/auth/signup', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
